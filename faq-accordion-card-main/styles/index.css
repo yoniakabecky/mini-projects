@@ -71,7 +71,7 @@ main {
 
 .faq-wrapper h1 {
   margin-bottom: 1rem;
-  font-size: 36px;
+  font-size: 2rem;
   color: hsl(238, 29%, 16%);
 }
 
@@ -98,7 +98,6 @@ main {
 }
 
 .down-arrow {
-  margin-right: 1rem;
   line-height: 1rem;
 }
 
@@ -112,3 +111,48 @@ TODO: selected question
   color: hsl(238, 29%, 16%);
   font-weight: 700;
 } */
+
+.mobile-image-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .card {
+    top: 55%;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 330px;
+    height: 70vh;
+    max-height: 550px;
+  }
+
+  .image-wrapper {
+    display: none;
+  }
+
+  .mobile-image-wrapper {
+    display: block;
+    position: relative;
+    align-self: center;
+  }
+
+  #image-woman-mobile {
+    position: absolute;
+    top: -6.75rem;
+    left: -1.75rem;
+  }
+
+  #image-bg-mobile {
+    z-index: -1;
+  }
+
+  .faq-wrapper {
+    padding: 2rem 1.5rem;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .faq-wrapper h1 {
+    text-align: center;
+  }
+}
